@@ -8,7 +8,7 @@ This allows you to select any Color Scheme quickly from these
 ```
 * Color Scheme - Default
 * User
-* Any directory that match "*colou?r.?scheme"
+* Any directory that match ".*colou?r.?scheme.*"
 ```
 and the plugin will list all "*.tmTheme" files contained on the directories listed above, allowing you to select your favorite Color Scheme.
 
