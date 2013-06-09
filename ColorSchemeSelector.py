@@ -25,7 +25,8 @@ class SelectColorSchemeCommand(sublime_plugin.WindowCommand):
         return files
 
     def set_color_scheme(self, color_scheme):
-        color_scheme_file = os.path.join(os.path.join(sublime.packages_path(),self.maps[color_scheme]), color_scheme)
+        # color_scheme_file = os.path.join(os.path.join(sublime.packages_path(), self.maps[color_scheme]), color_scheme)
+        color_scheme_file = 'Packages/' + str(self.maps[color_scheme]) + '/' + color_scheme
         self.load_settings().set('color_scheme', color_scheme_file)
         sublime.save_settings('Preferences.sublime-settings')
 
